@@ -1,0 +1,29 @@
+@use 'variables';
+
+.hero{
+    &-container {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        img {
+            width: 300px;
+            margin-top: 30px;
+        }
+        h1{
+            color: variables.$primerColor;
+            font-weight: 900;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+        h2{
+            color: variables.$segundoColor;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        p{
+            color: variables.$segundoColor;
+            font-weight: 500;
+            padding: 15px;
+        }
+    }
+}
