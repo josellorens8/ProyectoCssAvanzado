@@ -5,3 +5,9 @@ $cuartoColor: #e2e9e9;
 $quintoColor: #f5f5f5;
 
 $Ubuntu: 'Ubuntu', sans-serif;
+
+@mixin estilosDeTextos($colorLetra, $grosor, $tamano){
+    color: $colorLetra;
+    font-weight: $grosor;
+    font-size: $tamano;
+}

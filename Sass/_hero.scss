@@ -10,19 +10,14 @@
             margin-top: 30px;
         }
         h1{
-            color: variables.$primerColor;
-            font-weight: 900;
-            font-size: 30px;
+            @include variables.estilosDeTextos(variables.$primerColor, 900, 30px);
             margin-top: 10px;
         }
         h2{
-            color: variables.$segundoColor;
-            font-size: 20px;
-            font-weight: 500;
+            @include variables.estilosDeTextos(variables.$segundoColor, 600, 20px);
         }
         p{
-            color: variables.$segundoColor;
-            font-weight: 500;
+            @include variables.estilosDeTextos(variables.$segundoColor, 500, 15px);
             padding: 15px;
         }
     }

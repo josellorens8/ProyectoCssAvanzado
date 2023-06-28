@@ -81,11 +81,12 @@ body {
 }
 .hero-container h2 {
   color: #587d7e;
+  font-weight: 600;
   font-size: 20px;
-  font-weight: 500;
 }
 .hero-container p {
   color: #587d7e;
   font-weight: 500;
+  font-size: 15px;
   padding: 15px;
 }/*# sourceMappingURL=styles.css.map */
