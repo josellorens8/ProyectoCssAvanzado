@@ -17,7 +17,7 @@
             @include variables.estilosDeTextos(variables.$segundoColor, 600, 20px);
         }
         p{
-            @include variables.estilosDeTextos(variables.$segundoColor, 500, 15px);
+            @include variables.estilosDeTextos(variables.$segundoColor, 600, 15px);
             padding: 15px;
         }
     }

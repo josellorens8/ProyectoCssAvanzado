@@ -86,7 +86,74 @@ body {
 }
 .hero-container p {
   color: #587d7e;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
   padding: 15px;
+}
+
+.conocimientos {
+  margin-top: 70px;
+  text-align: center;
+}
+.conocimientos-container h1 {
+  color: #344d50;
+  font-weight: 900;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.conocimientos-container h2 {
+  color: #344d50;
+  font-weight: 900;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.conocimientos-container p {
+  color: #587d7e;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 14px;
+}
+.conocimientos-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 25px;
+}
+.conocimientos-container li {
+  color: #587d7e;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+.conocimientos-container > ul:last-of-type li {
+  color: #587d7e;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.proyectos {
+  margin-top: 20px;
+  text-align: center;
+}
+.proyectos-container h1 {
+  color: #344d50;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.proyectos-container-img {
+  width: 100%;
+  height: 250px;
+}
+.proyectos-container-img:hover img {
+  filter: brightness(20%);
+}
+.proyectos-container-img a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transition: filter 1s ease;
 }/*# sourceMappingURL=styles.css.map */
