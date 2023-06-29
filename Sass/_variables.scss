@@ -11,3 +11,14 @@ $Ubuntu: 'Ubuntu', sans-serif;
     font-weight: $grosor;
     font-size: $tamano;
 }
+
+@mixin formBox($ancho, $alto, $colorFondo, $bordeRadio, $anchoBorde, $estiloBorde, $colorBorde){
+    width: $ancho;
+    height: $alto;
+    background-color: $colorFondo;
+    border-radius: $bordeRadio;
+    text-align: center;
+    border-width: $anchoBorde;
+    border-style: $estiloBorde;
+    border-color: $colorBorde;
+}

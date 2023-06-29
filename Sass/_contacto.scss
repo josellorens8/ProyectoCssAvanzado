@@ -1,0 +1,58 @@
+@use 'variables';
+
+.contacto{
+    &-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: variables.$cuartoColor;
+        h1 {
+            padding-top: 80px;
+            padding-bottom: 40px;
+            @include variables.estilosDeTextos(variables.$primerColor, 900, 30px);
+        }
+
+        &-form{
+            form {
+                @include variables.formBox(320px, 500px, variables.$primerColor, 30px, 0px, none, #ffffff);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                
+
+                input {
+                    @include variables.formBox(280px, 40px, variables.$primerColor, 18px, 3px, solid, variables.$quintoColor);
+                    @include variables.estilosDeTextos(variables.$quintoColor, 900, 14px);
+
+                    &::placeholder{
+                        @include variables.estilosDeTextos(variables.$quintoColor, 900, 14px);
+                    }
+
+                    &:not(:placeholder-shown){
+                        background-color: variables.$primerColor;
+                    }
+                }
+
+                textarea {
+                    @include variables.formBox(280px, 300px, variables.$primerColor, 18px, 3px, solid, variables.$quintoColor);
+                    resize: none;
+                    font-family: variables.$Ubuntu;
+                    padding: 5px;
+                    @include variables.estilosDeTextos(variables.$quintoColor, 900, 14px);
+                        
+
+                    &::placeholder{
+                        padding: 5px;
+                        @include variables.estilosDeTextos(variables.$quintoColor, 900, 16px);
+                    }
+                }
+                button {
+                    @include variables.estilosDeTextos(variables.$quintoColor, 900, 14px);
+                    @include variables.formBox(200px, 40px, variables.$primerColor, 30px, 3px, solid, variables.$quintoColor);
+                }
+            }
+        }
+    }
+}
