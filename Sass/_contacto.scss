@@ -6,6 +6,7 @@
         flex-direction: column;
         align-items: center;
         background-color: variables.$cuartoColor;
+        padding-bottom: 50px;
         h1 {
             padding-top: 80px;
             padding-bottom: 40px;
@@ -50,7 +51,7 @@
                 }
                 button {
                     @include variables.estilosDeTextos(variables.$quintoColor, 900, 14px);
-                    @include variables.formBox(200px, 40px, variables.$primerColor, 30px, 3px, solid, variables.$quintoColor);
+                    @include variables.formBox(120px, 40px, variables.$primerColor, 30px, 3px, solid, variables.$quintoColor);
                 }
             }
         }

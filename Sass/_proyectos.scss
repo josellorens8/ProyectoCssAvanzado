@@ -7,12 +7,33 @@
             @include variables.estilosDeTextos(variables.$primerColor, 900, 30px);
             margin-bottom: 30px;
         }
+        
         &-img{
             width: 100%;
             height: 250px;
-            &:hover img {
-                filter: brightness(20%);
+            position: relative;
+            display: inline-block;
+            &:hover {
+                img {
+                    filter: brightness(100%);
+                }
+
+                h2 {
+                    opacity: 0;
+                }
+            } 
+            h2{
+                width: 100%;
+                opacity: 1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @include variables.estilosDeTextos(variables.$tercerColor, 900, 30px);
+                transition: opacity 0.3s ease;
+                z-index: 1;
             }
+            
             a{ 
                 img{
                 width: 100%;
@@ -20,6 +41,7 @@
                 object-fit: cover;
                 object-position: top;
                 transition: filter 1s ease;
+                filter: brightness(20%);
                 }
             }
         }
