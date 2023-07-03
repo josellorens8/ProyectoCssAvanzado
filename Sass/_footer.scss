@@ -19,7 +19,7 @@ footer{
         &:hover{ 
             box-shadow: 0px 0px 6px 0px variables.$quintoColor;
             img{
-                //box-shadow: -2px -2px 5px -2px variables.$quintoColor;
+                filter: drop-shadow(0px 0px 2px variables.$quintoColor);
             }
         }
         img{

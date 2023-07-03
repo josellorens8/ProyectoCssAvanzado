@@ -6,9 +6,9 @@
         flex-direction: column;
         align-items: center;
         background-color: variables.$cuartoColor;
+        padding-top: 100px;
         padding-bottom: 50px;
         h1 {
-            padding-top: 80px;
             padding-bottom: 40px;
             @include variables.estilosDeTextos(variables.$primerColor, 900, 30px);
         }

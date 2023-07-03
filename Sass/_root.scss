@@ -5,7 +5,11 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: variables.$quintoColor;
+    background-color: variables.$cuartoColor;
     font-family: variables.$Ubuntu;
 }

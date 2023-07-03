@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #f5f5f5;
+  background-color: #e2e9e9;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -16,6 +20,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #344d50;
+  position: fixed;
+  z-index: 2;
 }
 .nav-imgLogo {
   margin-left: 10px;
@@ -59,10 +65,23 @@ body {
   font-weight: 700;
 }
 
+@keyframes cargar {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .hero-container {
   width: 100%;
   height: 100%;
   text-align: center;
+  padding-top: 80px;
+  animation-name: cargar;
+  animation-duration: 1s;
 }
 .hero-container img {
   width: 300px;
@@ -87,7 +106,7 @@ body {
 }
 
 .conocimientos {
-  margin-top: 70px;
+  padding-top: 100px;
   text-align: center;
 }
 .conocimientos-container h1 {
@@ -127,7 +146,7 @@ body {
 }
 
 .proyectos {
-  margin-top: 20px;
+  padding-top: 100px;
   text-align: center;
 }
 .proyectos-container h1 {
@@ -177,10 +196,10 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #e2e9e9;
+  padding-top: 100px;
   padding-bottom: 50px;
 }
 .contacto-container h1 {
-  padding-top: 80px;
   padding-bottom: 40px;
   color: #344d50;
   font-weight: 900;
@@ -298,6 +317,9 @@ footer {
 }
 .foo-container-red:hover {
   box-shadow: 0px 0px 6px 0px #f5f5f5;
+}
+.foo-container-red:hover img {
+  filter: drop-shadow(0px 0px 2px #f5f5f5);
 }
 .foo-container-red img {
   position: relative;

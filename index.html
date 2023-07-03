@@ -20,14 +20,14 @@
             <input type="checkbox" id="menu">
 
             <div class="nav-items">
-                <a href="#">INICIO</a>
-                <a href="#">CONOCIMIENTOS</a>
-                <a href="#">PROYECTOS</a>
-                <a href="#">CONTACTO</a>
+                <a href="#inicio">INICIO</a>
+                <a href="#conocimientos">CONOCIMIENTOS</a>
+                <a href="#proyectos">PROYECTOS</a>
+                <a href="#contacto">CONTACTO</a>
             </div>
         </nav>
     </header>
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="hero-container">
             <img src="Img/perfil.png" alt="Imagen perfil">
             <h1>José Daniel Llorens</h1>
@@ -43,7 +43,7 @@
             en contactarme!</p>
         </div>
     </section>
-    <section class="conocimientos">
+    <section class="conocimientos" id="conocimientos">
         <div class="conocimientos-container">
             <h1>CONOCIMIENTOS</h1>
             <p>Mi primer contacto con la programación fue en
@@ -75,7 +75,7 @@
             </ul>
         </div>
     </section>
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
         <div class="proyectos-container">
             <h1>PROYECTOS</h1>
             <div class="proyectos-container-img">
@@ -116,21 +116,18 @@
             </div>
         </div>
     </section>
-    <section class="contacto">
+    <section class="contacto" id="contacto">
         <div class="contacto-container">
             <h1>CONTACTO</h1>
             <div class="contacto-container-form">
                 <form>
-                    <!-- <label for="nombre">NOMBRE</label> -->
+
                     <input type="text" id="nombre" name="name" placeholder="NOMBRE">
 
-                    <!-- <label for="correo">CORREO</label> -->
                     <input type="email" id="correo" name="email" placeholder="CORREO">
 
-                    <!-- <label for="telefono">TELEFONO</label> -->
                     <input type="tel" id="telefono" name="tel" placeholder="TELEFONO">
 
-                    <!-- <label for="nombre">MENSAJE</label> -->
                     <textarea placeholder="MENSAJE"></textarea>
 
                     <button type="submit">ENVIAR</button>

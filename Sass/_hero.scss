@@ -1,9 +1,14 @@
 @use 'variables';
+@use 'animaciones';
 .hero{
     &-container {
         width: 100%;
         height: 100%;
         text-align: center;
+        padding-top: 80px;
+
+        animation-name: cargar;
+        animation-duration: 1s;
         img {
             width: 300px;
             margin-top: 30px;
