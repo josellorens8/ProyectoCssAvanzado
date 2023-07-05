@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'medias';
 
 .conocimientos{
     padding-top: 100px;
@@ -12,6 +13,10 @@
         p{
             @include variables.estilosDeTextos(variables.$segundoColor, 700, 18px);
             padding: 14px;
+            @include medias.mediaQ(768px){
+                @include variables.estilosDeTextos(variables.$segundoColor, 600, 24px);
+                padding: 14px 50px 14px 50px;
+            }
         }
         &-info{
             display: grid;
@@ -23,6 +28,9 @@
                     @include variables.estilosDeTextos(variables.$primerColor, 900, 25px);
                     padding-bottom: 20px;
                     text-align: end;
+                    @include medias.mediaQ(768px){
+                        text-align: center;
+                    }
                 }
                 ul{
                     display: flex;
@@ -35,6 +43,9 @@
                     line-height: 1;
                     list-style: none;
                     text-align: end;
+                    @include medias.mediaQ(768px){
+                        text-align: center;
+                    }
                     
                 }
             }
@@ -43,12 +54,18 @@
                     @include variables.estilosDeTextos(variables.$primerColor, 900, 25px);
                     padding-bottom: 20px;
                     text-align: start;
+                    @include medias.mediaQ(768px){
+                        text-align: center;
+                    }
                 }
                 ul{
                     li{
                         @include variables.estilosDeTextos(variables.$segundoColor, 700, 25px);
                         list-style: none;
                         text-align: start;
+                        @include medias.mediaQ(768px){
+                            text-align: center;
+                        }
                     }
                 }
             }

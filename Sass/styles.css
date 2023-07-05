@@ -35,6 +35,11 @@ body {
   margin-right: 20px;
   width: 40px;
 }
+@media screen and (min-width: 768px) {
+  .nav-label {
+    display: none;
+  }
+}
 .nav input {
   display: none;
 }
@@ -57,12 +62,52 @@ body {
   transform: translateX(-100%);
   transition: all 0.3s ease-in-out;
 }
+@media screen and (min-width: 768px) {
+  .nav-items {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    background-color: #344d50;
+    align-items: center;
+    opacity: 1;
+    transform: translateX(0%);
+    margin-right: 10px;
+  }
+}
 .nav-items a {
   padding: 15px;
   color: #9dc8c8;
   text-decoration: none;
   font-size: 25px;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .nav-items a:hover {
+    transform: scale(1.05);
+    transition: transform 1s ease;
+    border-radius: 3px;
+    color: #344d50;
+    background-color: #f5f5f5;
+    text-shadow: 0px 0px 5px #587d7e;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-items a:hover:last-of-type:hover {
+    color: #f5f5f5;
+    background-color: #9dc8c8;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-items a {
+    padding: 5px;
+    color: #9dc8c8;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    transition: transform 1s ease;
+  }
 }
 
 @keyframes cargar {
@@ -87,6 +132,11 @@ body {
   width: 300px;
   margin-top: 30px;
 }
+@media screen and (min-width: 768px) {
+  .hero-container img:hover {
+    filter: drop-shadow(0px 0px 20px #344d50);
+  }
+}
 .hero-container h1 {
   color: #344d50;
   font-weight: 900;
@@ -103,6 +153,14 @@ body {
   font-weight: 600;
   font-size: 15px;
   padding: 15px;
+}
+@media screen and (min-width: 768px) {
+  .hero-container p {
+    color: #587d7e;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 30px 50px 15px 50px;
+  }
 }
 
 .conocimientos {
@@ -121,6 +179,14 @@ body {
   font-size: 18px;
   padding: 14px;
 }
+@media screen and (min-width: 768px) {
+  .conocimientos-container p {
+    color: #587d7e;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 14px 50px 14px 50px;
+  }
+}
 .conocimientos-container-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -133,6 +199,11 @@ body {
   font-size: 25px;
   padding-bottom: 20px;
   text-align: end;
+}
+@media screen and (min-width: 768px) {
+  .conocimientos-container-info-1 h2 {
+    text-align: center;
+  }
 }
 .conocimientos-container-info-1 ul {
   display: flex;
@@ -148,12 +219,22 @@ body {
   list-style: none;
   text-align: end;
 }
+@media screen and (min-width: 768px) {
+  .conocimientos-container-info-1 li {
+    text-align: center;
+  }
+}
 .conocimientos-container-info-2 h2 {
   color: #344d50;
   font-weight: 900;
   font-size: 25px;
   padding-bottom: 20px;
   text-align: start;
+}
+@media screen and (min-width: 768px) {
+  .conocimientos-container-info-2 h2 {
+    text-align: center;
+  }
 }
 .conocimientos-container-info-2 ul li {
   color: #587d7e;
@@ -162,12 +243,17 @@ body {
   list-style: none;
   text-align: start;
 }
+@media screen and (min-width: 768px) {
+  .conocimientos-container-info-2 ul li {
+    text-align: center;
+  }
+}
 
 .proyectos {
   padding-top: 100px;
   text-align: center;
 }
-.proyectos-container h1 {
+.proyectos h1 {
   color: #344d50;
   font-weight: 900;
   font-size: 30px;
@@ -207,6 +293,18 @@ body {
      object-position: top;
   transition: filter 1s ease;
   filter: brightness(20%);
+}
+@media screen and (min-width: 540px) {
+  .proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .contacto-container {
@@ -323,6 +421,11 @@ footer {
   align-items: center;
   gap: 6px;
 }
+@media screen and (min-width: 768px) {
+  .foo-container {
+    gap: 20px;
+  }
+}
 .foo-container-red {
   width: 55px;
   height: 55px;
@@ -332,6 +435,18 @@ footer {
   border-width: 2px;
   border-style: solid;
   border-color: #f5f5f5;
+}
+@media screen and (min-width: 768px) {
+  .foo-container-red {
+    width: 65px;
+    height: 65px;
+    background-color: #587d7e;
+    border-radius: 50%;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f5f5f5;
+  }
 }
 .foo-container-red:hover {
   box-shadow: 0px 0px 6px 0px #f5f5f5;

@@ -1,0 +1,7 @@
+@mixin mediaQ ($ancho) {
+    @media screen and (min-width: $ancho) {
+        @content;
+    }
+}
+
+//540 - 768 - 1024
