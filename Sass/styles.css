@@ -270,6 +270,7 @@ body {
 }
 .proyectos-container-img:hover h2 {
   opacity: 0;
+  transform: scale(0);
 }
 .proyectos-container-img h2 {
   width: 100%;
